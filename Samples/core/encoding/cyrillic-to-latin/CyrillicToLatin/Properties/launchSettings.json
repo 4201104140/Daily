@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CyrillicToLatin": {
+      "commandName": "Project",
+      "commandLineArgs": "TestIn.txt TestOut.txt"
+    }
+  }
+}

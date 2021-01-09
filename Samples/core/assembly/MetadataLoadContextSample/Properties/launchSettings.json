@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "MetadataLoadContextSample": {
+      "commandName": "Project",
+      "commandLineArgs": "MetadataLoadContextSample.dll",
+      "environmentVariables": {
+        "Key": "Value"
+      }
+    }
+  }
+}

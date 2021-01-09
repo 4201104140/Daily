@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagnostics", "diagnostics", "{90272E9F-3403-4809-AF74-96A7DC8F64CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiagnosticScenarios", "core\diagnostics\DiagnosticScenarios\DiagnosticScenarios.csproj", "{5F64B7E6-9059-4B38-9E3D-636D63AFB69D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assembly", "assembly", "{05636B89-B149-4CF1-8833-71D2338DB3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataLoadContextSample", "core\assembly\MetadataLoadContextSample\MetadataLoadContextSample.csproj", "{0BAECF15-3D5F-4807-B0FD-528E912AF609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "console-apps", "console-apps", "{69621F00-FF46-4AB7-9FCF-F032FEF79552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewTypesMsBuild", "NewTypesMsBuild", "{97A9F409-1BD1-4D8B-BC6E-E9DA53389BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTypes", "core\console-apps\NewTypesMsBuild\src\NewTypes\NewTypes.csproj", "{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTypesTests", "core\console-apps\NewTypesMsBuild\test\NewTypesTests\NewTypesTests.csproj", "{3142F007-86B3-4780-A340-8F44D7EBB5E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "encoding", "encoding", "{FDB7ACD1-EECB-44B5-85D0-EC986A087F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cyrillic-to-latin", "cyrillic-to-latin", "{B2DA7F06-3159-449E-8CA0-A0388DB0C71B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyrillicToLatin", "core\encoding\cyrillic-to-latin\CyrillicToLatin\CyrillicToLatin.csproj", "{621F6329-A7FB-4E3F-8243-27E34441D933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F64B7E6-9059-4B38-9E3D-636D63AFB69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F64B7E6-9059-4B38-9E3D-636D63AFB69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F64B7E6-9059-4B38-9E3D-636D63AFB69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F64B7E6-9059-4B38-9E3D-636D63AFB69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAECF15-3D5F-4807-B0FD-528E912AF609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAECF15-3D5F-4807-B0FD-528E912AF609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAECF15-3D5F-4807-B0FD-528E912AF609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAECF15-3D5F-4807-B0FD-528E912AF609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3142F007-86B3-4780-A340-8F44D7EBB5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3142F007-86B3-4780-A340-8F44D7EBB5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3142F007-86B3-4780-A340-8F44D7EBB5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3142F007-86B3-4780-A340-8F44D7EBB5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621F6329-A7FB-4E3F-8243-27E34441D933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621F6329-A7FB-4E3F-8243-27E34441D933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621F6329-A7FB-4E3F-8243-27E34441D933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621F6329-A7FB-4E3F-8243-27E34441D933}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90272E9F-3403-4809-AF74-96A7DC8F64CD} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
+		{5F64B7E6-9059-4B38-9E3D-636D63AFB69D} = {90272E9F-3403-4809-AF74-96A7DC8F64CD}
+		{05636B89-B149-4CF1-8833-71D2338DB3CA} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
+		{0BAECF15-3D5F-4807-B0FD-528E912AF609} = {05636B89-B149-4CF1-8833-71D2338DB3CA}
+		{69621F00-FF46-4AB7-9FCF-F032FEF79552} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
+		{97A9F409-1BD1-4D8B-BC6E-E9DA53389BFF} = {69621F00-FF46-4AB7-9FCF-F032FEF79552}
+		{2E14F3FC-24FC-4921-8CF1-6D1112C7357C} = {97A9F409-1BD1-4D8B-BC6E-E9DA53389BFF}
+		{3142F007-86B3-4780-A340-8F44D7EBB5E7} = {97A9F409-1BD1-4D8B-BC6E-E9DA53389BFF}
+		{FDB7ACD1-EECB-44B5-85D0-EC986A087F6B} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
+		{B2DA7F06-3159-449E-8CA0-A0388DB0C71B} = {FDB7ACD1-EECB-44B5-85D0-EC986A087F6B}
+		{621F6329-A7FB-4E3F-8243-27E34441D933} = {B2DA7F06-3159-449E-8CA0-A0388DB0C71B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAF5E2DB-F782-45A3-BC4D-27718638404C}
+	EndGlobalSection
+EndGlobal
