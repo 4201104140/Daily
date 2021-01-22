@@ -11,21 +11,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiagnosticScenarios", "core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assembly", "assembly", "{05636B89-B149-4CF1-8833-71D2338DB3CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataLoadContextSample", "core\assembly\MetadataLoadContextSample\MetadataLoadContextSample.csproj", "{0BAECF15-3D5F-4807-B0FD-528E912AF609}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetadataLoadContextSample", "core\assembly\MetadataLoadContextSample\MetadataLoadContextSample.csproj", "{0BAECF15-3D5F-4807-B0FD-528E912AF609}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "console-apps", "console-apps", "{69621F00-FF46-4AB7-9FCF-F032FEF79552}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewTypesMsBuild", "NewTypesMsBuild", "{97A9F409-1BD1-4D8B-BC6E-E9DA53389BFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTypes", "core\console-apps\NewTypesMsBuild\src\NewTypes\NewTypes.csproj", "{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewTypes", "core\console-apps\NewTypesMsBuild\src\NewTypes\NewTypes.csproj", "{2E14F3FC-24FC-4921-8CF1-6D1112C7357C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTypesTests", "core\console-apps\NewTypesMsBuild\test\NewTypesTests\NewTypesTests.csproj", "{3142F007-86B3-4780-A340-8F44D7EBB5E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewTypesTests", "core\console-apps\NewTypesMsBuild\test\NewTypesTests\NewTypesTests.csproj", "{3142F007-86B3-4780-A340-8F44D7EBB5E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "encoding", "encoding", "{FDB7ACD1-EECB-44B5-85D0-EC986A087F6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cyrillic-to-latin", "cyrillic-to-latin", "{B2DA7F06-3159-449E-8CA0-A0388DB0C71B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyrillicToLatin", "core\encoding\cyrillic-to-latin\CyrillicToLatin\CyrillicToLatin.csproj", "{621F6329-A7FB-4E3F-8243-27E34441D933}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CyrillicToLatin", "core\encoding\cyrillic-to-latin\CyrillicToLatin\CyrillicToLatin.csproj", "{621F6329-A7FB-4E3F-8243-27E34441D933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fasttest", "fasttest", "{04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VolatileTest", "core\fasttest\VolatileTest\VolatileTest.csproj", "{71DE821F-9EE9-4493-A98A-157917C07E25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHanlder", "core\fasttest\EventHanlder\EventHanlder.csproj", "{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +59,14 @@ Global
 		{621F6329-A7FB-4E3F-8243-27E34441D933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{621F6329-A7FB-4E3F-8243-27E34441D933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{621F6329-A7FB-4E3F-8243-27E34441D933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71DE821F-9EE9-4493-A98A-157917C07E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71DE821F-9EE9-4493-A98A-157917C07E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71DE821F-9EE9-4493-A98A-157917C07E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71DE821F-9EE9-4493-A98A-157917C07E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +83,9 @@ Global
 		{FDB7ACD1-EECB-44B5-85D0-EC986A087F6B} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
 		{B2DA7F06-3159-449E-8CA0-A0388DB0C71B} = {FDB7ACD1-EECB-44B5-85D0-EC986A087F6B}
 		{621F6329-A7FB-4E3F-8243-27E34441D933} = {B2DA7F06-3159-449E-8CA0-A0388DB0C71B}
+		{04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1} = {CFEC5DB4-6A2F-4CF3-A4EF-1FC7C08769D0}
+		{71DE821F-9EE9-4493-A98A-157917C07E25} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
+		{8DF51044-9F4B-4F0B-91BA-80CDDE7CE9F6} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CAF5E2DB-F782-45A3-BC4D-27718638404C}

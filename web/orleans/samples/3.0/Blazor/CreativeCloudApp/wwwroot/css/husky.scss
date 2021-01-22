@@ -1,0 +1,156 @@
+﻿
+
+$color-bg: #4F8EDB;
+$color-primary: rgba(#30508F, 0.3);
+$color-primary: #30508F;
+$color-white: rgba(white, 0.3);
+$color-white: white;
+
+$color-light: #9EB6D7;
+$color-lighter: #C8DAF2;
+$color-dark: #343C60;
+
+$color-ear: #DE6465;
+$color-tongue: $color-ear;
+
+$duration: 12s;
+$total-kf: 15;
+
+$k-body: (
+  0: translate(0),
+  1: translateY(3%),
+  2: translate(0),
+  3: translate(0),
+  4: translateY(2%),
+  5: translateY(0),
+);
+
+$k-mane: map-merge($k-body, (
+  1: translateY(5%),
+  4: translateY(3%)
+));
+
+@mixin effect($name, $kf) {
+  @keyframes #{$name} {
+    @each $interval, $transform in $kf {
+      #{percentage($interval/$total-kf)} {
+        transform: $transform;
+      }
+    }
+  }
+}
+
+@include effect('mane', $k-mane);
+
+*, *:before, *:after {
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.husky {
+  animation: squiggly-anim 0.3s infinite;
+  height: 60vmin;
+  width: 84vmin;
+
+  @media screen and (max-width: 400px) {
+    // Chrome for Android chokes
+    animation: none;
+  }
+
+  &:before {
+    width: 90%;
+    height: 0.5vmin;
+    background: $color-primary;
+    border-radius: 0.5vmin;
+    top: 100%;
+    left: 5%;
+    z-index: 2;
+  }
+
+  &:after {
+    width: 100%;
+    height: 10%;
+    top: calc(100% + 0.5vmin);
+    z-index: 3;
+    background: $color-bg;
+  }
+}
+
+.mane {
+  animation: mane $duration none infinite;
+  z-index: 2;
+  position: absolute;
+  width: 31.5%;
+  height: 30%;
+  top: 44%;
+  left: 37%;
+
+  &:before {
+    background: $color-white;
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 10% 50%;
+    border-top-right-radius: 20% 100%;
+    border-bottom-left-radius: 10% 50%;
+  }
+
+  &:after {
+    background: $color-white;
+    top: 25%;
+    height: 76%;
+    width: 30%;
+    right: 23%;
+    border-top-right-radius: 100% 80%;
+    transform: rotate(47deg);
+    transform-origin: bottom right;
+  }
+}
+
+.coat {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: $color-white;
+  transform-origin: bottom right;
+  left: 10%;
+  top: 21%;
+  transform: rotate(25deg) skewX(-30deg);
+}
+
+@keyframes squiggly-anim {
+  0% {
+    filter: url('#squiggly-0');
+  }
+
+  25% {
+    filter: url('#squiggly-1');
+  }
+
+  50% {
+    filter: url('#squiggly-2');
+  }
+
+  75% {
+    filter: url('#squiggly-3');
+  }
+
+  100% {
+    filter: url('#squiggly-4');
+  }
+}
+
+
+html, body {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bg;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
