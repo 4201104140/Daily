@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "core\fasttes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Try", "core\fasttest\Try\Try.csproj", "{52696CE8-5F45-49AD-A3D6-62168DDB9DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Http", "core\fasttest\Http\Http.csproj", "{5DC77ADD-7BF9-47F1-8F03-74675173612E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http", "core\fasttest\Http\Http.csproj", "{5DC77ADD-7BF9-47F1-8F03-74675173612E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakReference", "core\fasttest\WeakReference\WeakReference.csproj", "{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{5DC77ADD-7BF9-47F1-8F03-74675173612E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DC77ADD-7BF9-47F1-8F03-74675173612E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DC77ADD-7BF9-47F1-8F03-74675173612E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{3EED1BEF-CB92-4186-A46F-65D722716361} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
 		{52696CE8-5F45-49AD-A3D6-62168DDB9DAF} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
 		{5DC77ADD-7BF9-47F1-8F03-74675173612E} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
+		{06A997D5-55D6-4CBE-A2A1-5A2E1FFAD86E} = {04DD1FBD-0A93-45FC-B8D3-06F35FE23DD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CAF5E2DB-F782-45A3-BC4D-27718638404C}
