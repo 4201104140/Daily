@@ -32,8 +32,12 @@ namespace Try
             show1();
             show();
 
+            Int32 i = 0;
+            var name = new Name("Tai");
+            var name1 = new Name("Tai");
 
 
+            Console.WriteLine(name1.Equals(name));
         }
     }
 
@@ -43,6 +47,8 @@ namespace Try
     {
         private string instanceName;
 
+        public string InstanceName => instanceName;
+
         public Name(string name)
         {
             instanceName = name;
@@ -51,6 +57,25 @@ namespace Try
         public void DisplayName()
         {
             Console.WriteLine(instanceName);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || obj is not Name item)
+                return false;
+
+            if (Object.ReferenceEquals(this, obj))
+                return true;
+
+            if (this.GetType() != obj.GetType())
+                return false;
+
+            return item.InstanceName == this.InstanceName;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
